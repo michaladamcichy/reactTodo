@@ -1,0 +1,98 @@
+@font-face {
+    font-family: squada-one;
+    src: url(fonts/SquadaOne-Regular.ttf);
+  }
+
+* {
+    font-family: verdana;
+}
+.mainContainer {
+    background-color: white;
+    border: 5px dashed black;
+    //border-radius: 10px;
+}
+
+.header {
+    border-bottom: 3px dashed black;
+    //text-align: center;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.taskContainer {
+    //padding: 5px;
+}
+
+.task {
+    //display: inline-block;
+    border: 5px dashed black;
+    //border-radius: 10px;
+    margin-top: 5px;
+    padding-top: 10px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.task:hover {
+    transform: scale(1.03);
+    //transform: rotateY(15deg);
+    // transform: rotate3d(1, 0.2, 0.2, 10deg);
+}
+
+._button {
+    height: 30px;
+    width: 30px;
+    font-size: medium;
+}
+
+.checkbox {
+    @extend ._button;
+}
+
+.deleteButton {
+    @extend ._button;
+    border-radius: 5px;
+    background-color: red;
+    font-weight: bold;
+}
+
+.taskField {
+    transition: transform 0.1s ease-in-out;
+}
+
+.taskField:hover {
+    transform: scale(1.1);
+}
+
+.tabSwitch {
+    transition: all 0.1s ease-in-out; 
+    //border: 3px dashed transparent;
+}
+
+.tabSwitch:hover {
+    //background-color: green;
+    //border: 3px dashed blue;
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.input {
+    border-width: 0;
+    width: 100%;
+    // margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+}
+
+.submitButton {
+    border-radius: 5px;
+    background-color: green;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.footer {
+    vertical-align: text-bottom;
+    padding-top: 100px;
+}
